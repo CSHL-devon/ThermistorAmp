@@ -1,0 +1,408 @@
+EESchema Schematic File Version 4
+LIBS:thermistor_amplifier-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Instrumentation:AD623ANZ U2
+U 1 1 6100408A
+P 5600 3600
+F 0 "U2" H 5900 3725 50  0000 L CNN
+F 1 "AD623ANZ" H 5900 3475 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5500 3600 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD623.pdf" H 6050 3200 50  0001 C CNN
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 61004389
+P 5200 3600
+F 0 "R5" V 5125 3550 50  0000 L CNN
+F 1 "2.7K" V 5275 3525 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5200 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3500 5300 3500
+Wire Wire Line
+	5200 3700 5300 3700
+$Comp
+L Device:R_Small R3
+U 1 1 61004739
+P 5100 3075
+F 0 "R3" V 5025 3025 50  0000 L CNN
+F 1 "1.2K" V 5175 3000 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5100 3075 50  0001 C CNN
+F 3 "~" H 5100 3075 50  0001 C CNN
+	1    5100 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61004851
+P 4350 3400
+F 0 "R1" V 4275 3400 50  0000 C CNN
+F 1 "820" V 4425 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4350 3400 50  0001 C CNN
+F 3 "~" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM R2
+U 1 1 61004ABA
+P 4750 3400
+F 0 "R2" V 4675 3400 50  0000 C CNN
+F 1 "1K" V 4825 3400 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" V 4680 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 3400 4600 3400
+$Comp
+L power:+5V #PWR0101
+U 1 1 61004CB1
+P 4250 3400
+F 0 "#PWR0101" H 4250 3250 50  0001 C CNN
+F 1 "+5V" V 4265 3528 50  0000 L CNN
+F 2 "" H 4250 3400 50  0001 C CNN
+F 3 "" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0102
+U 1 1 61004D97
+P 5100 2975
+F 0 "#PWR0102" H 5100 2725 50  0001 C CNN
+F 1 "Earth" H 5100 2825 50  0001 C CNN
+F 2 "" H 5100 2975 50  0001 C CNN
+F 3 "~" H 5100 2975 50  0001 C CNN
+	1    5100 2975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 610053D3
+P 5100 4100
+F 0 "R4" V 5025 4050 50  0000 L CNN
+F 1 "22K" V 5175 4025 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5100 4100 50  0001 C CNN
+F 3 "~" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0104
+U 1 1 6100564E
+P 5100 4200
+F 0 "#PWR0104" H 5100 3950 50  0001 C CNN
+F 1 "Earth" H 5100 4050 50  0001 C CNN
+F 2 "" H 5100 4200 50  0001 C CNN
+F 3 "~" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 61005742
+P 5600 2850
+F 0 "#PWR0105" H 5600 2700 50  0001 C CNN
+F 1 "+5V" H 5615 3023 50  0000 C CNN
+F 2 "" H 5600 2850 50  0001 C CNN
+F 3 "" H 5600 2850 50  0001 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3300 5600 3050
+$Comp
+L Device:C_Small C2
+U 1 1 61005843
+P 5850 3050
+F 0 "C2" V 5975 3050 50  0000 C CNN
+F 1 "0.1uF" V 5725 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5850 3050 50  0001 C CNN
+F 3 "~" H 5850 3050 50  0001 C CNN
+	1    5850 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0106
+U 1 1 610058B6
+P 6000 3050
+F 0 "#PWR0106" H 6000 2800 50  0001 C CNN
+F 1 "Earth" H 6000 2900 50  0001 C CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "~" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3050 5600 3050
+Connection ~ 5600 3050
+Wire Wire Line
+	5600 3050 5600 2850
+$Comp
+L power:-5V #PWR0107
+U 1 1 61005A03
+P 5600 4450
+F 0 "#PWR0107" H 5600 4550 50  0001 C CNN
+F 1 "-5V" H 5615 4623 50  0000 C CNN
+F 2 "" H 5600 4450 50  0001 C CNN
+F 3 "" H 5600 4450 50  0001 C CNN
+	1    5600 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3900 5600 4200
+$Comp
+L Device:C_Small C3
+U 1 1 61005AE2
+P 5850 4200
+F 0 "C3" V 5975 4200 50  0000 C CNN
+F 1 "0.1uF" V 5725 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5850 4200 50  0001 C CNN
+F 3 "~" H 5850 4200 50  0001 C CNN
+	1    5850 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4200 5600 4200
+Connection ~ 5600 4200
+Wire Wire Line
+	5600 4200 5600 4450
+$Comp
+L power:Earth #PWR0108
+U 1 1 61005BF1
+P 6000 4200
+F 0 "#PWR0108" H 6000 3950 50  0001 C CNN
+F 1 "Earth" H 6000 4050 50  0001 C CNN
+F 2 "" H 6000 4200 50  0001 C CNN
+F 3 "~" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0109
+U 1 1 610063C4
+P 5800 3900
+F 0 "#PWR0109" H 5800 3650 50  0001 C CNN
+F 1 "Earth" H 5800 3750 50  0001 C CNN
+F 2 "" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61006514
+P 7250 3700
+F 0 "J3" H 7330 3692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7330 3601 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 7250 3700 50  0001 C CNN
+F 3 "~" H 7250 3700 50  0001 C CNN
+	1    7250 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3600 6100 3600
+$Comp
+L power:Earth #PWR0110
+U 1 1 61006678
+P 7050 3700
+F 0 "#PWR0110" H 7050 3450 50  0001 C CNN
+F 1 "Earth" H 7050 3550 50  0001 C CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4000 5100 3800
+Wire Wire Line
+	4900 3400 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 5300 3400
+Wire Wire Line
+	5100 3175 5100 3400
+Wire Wire Line
+	5950 4200 6000 4200
+Wire Wire Line
+	5950 3050 6000 3050
+$Comp
+L power:-5V #PWR0111
+U 1 1 61268C48
+P 3900 2300
+F 0 "#PWR0111" H 3900 2400 50  0001 C CNN
+F 1 "-5V" V 3915 2428 50  0000 L CNN
+F 2 "" H 3900 2300 50  0001 C CNN
+F 3 "" H 3900 2300 50  0001 C CNN
+	1    3900 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 61268C9D
+P 3900 2600
+F 0 "#PWR0112" H 3900 2450 50  0001 C CNN
+F 1 "+5V" V 3915 2728 50  0000 L CNN
+F 2 "" H 3900 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61268DB0
+P 2200 2500
+F 0 "J1" H 2280 2492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 2280 2401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 2200 2500 50  0001 C CNN
+F 3 "~" H 2200 2500 50  0001 C CNN
+	1    2200 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 612692D3
+P 2750 2450
+F 0 "C1" V 2875 2450 50  0000 C CNN
+F 1 "10uF" V 2625 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2750 2450 50  0001 C CNN
+F 3 "~" H 2750 2450 50  0001 C CNN
+	1    2750 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 2400 2500 2400
+Wire Wire Line
+	2400 2500 2500 2500
+$Comp
+L Device:L L1
+U 1 1 61269C4C
+P 3000 2300
+F 0 "L1" V 2822 2300 50  0000 C CNN
+F 1 "12uH" V 2913 2300 50  0000 C CNN
+F 2 "thermistor_amp:RecomInductor" H 3000 2300 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2300 2750 2300
+Wire Wire Line
+	2500 2300 2500 2400
+Wire Wire Line
+	2500 2600 2750 2600
+Wire Wire Line
+	2500 2500 2500 2600
+Wire Wire Line
+	2750 2550 2750 2600
+Connection ~ 2750 2600
+Wire Wire Line
+	2750 2600 3050 2600
+Wire Wire Line
+	2750 2350 2750 2300
+Wire Wire Line
+	3050 2600 3050 2900
+Wire Wire Line
+	3050 2900 4250 2900
+Wire Wire Line
+	4250 2900 4250 2450
+Wire Wire Line
+	4250 2450 3900 2450
+Connection ~ 3050 2600
+Wire Wire Line
+	3050 2600 3200 2600
+$Comp
+L power:Earth #PWR0113
+U 1 1 6127B519
+P 4500 2450
+F 0 "#PWR0113" H 4500 2200 50  0001 C CNN
+F 1 "Earth" H 4500 2300 50  0001 C CNN
+F 2 "" H 4500 2450 50  0001 C CNN
+F 3 "~" H 4500 2450 50  0001 C CNN
+	1    4500 2450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4250 2450
+Wire Wire Line
+	4250 2450 4500 2450
+$Comp
+L Thermistor_amp:RKZE_DCDC_Conv U1
+U 1 1 6127D14F
+P 3550 2450
+F 0 "U1" H 3550 2865 50  0000 C CNN
+F 1 "RKZE_DCDC_Conv" H 3550 2774 50  0000 C CNN
+F 2 "thermistor_amp:RKZE_DCDC_Conv" H 3550 2450 50  0001 C CNN
+F 3 "" H 3550 2450 50  0001 C CNN
+	1    3550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 6127D351
+P 4450 3900
+F 0 "J2" H 4370 4217 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 4370 4126 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 4450 3900 50  0001 C CNN
+F 3 "~" H 4450 3900 50  0001 C CNN
+	1    4450 3900
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5100 3800
+Wire Wire Line
+	5100 3800 5300 3800
+$Comp
+L power:+5V #PWR0114
+U 1 1 6127EBF1
+P 4650 3900
+F 0 "#PWR0114" H 4650 3750 50  0001 C CNN
+F 1 "+5V" V 4665 4028 50  0000 L CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0115
+U 1 1 6127EC29
+P 4650 4000
+F 0 "#PWR0115" H 4650 3750 50  0001 C CNN
+F 1 "Earth" H 4650 3850 50  0001 C CNN
+F 2 "" H 4650 4000 50  0001 C CNN
+F 3 "~" H 4650 4000 50  0001 C CNN
+	1    4650 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3800 5100 3800
+Wire Wire Line
+	4600 3400 4600 3550
+Wire Wire Line
+	4600 3550 4750 3550
+Connection ~ 4600 3400
+Wire Wire Line
+	3150 2300 3200 2300
+Wire Wire Line
+	2850 2300 2750 2300
+Connection ~ 2750 2300
+$EndSCHEMATC
