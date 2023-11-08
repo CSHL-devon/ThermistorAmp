@@ -12,7 +12,7 @@
 1x  2.7K Ohm Resistor (1/4W) (Digi-Key# P2.7KBCCT-ND)  
 1x  22K Ohm Resistor (1/4W) (Digi-Key# MFR-25FBF52-22K-ND)  
 1x  8P IC Socket (Optional) (Digi-Key# ED58083-ND)  
-1x  Instrument Amp (Digi-Key# AD623ANZ-ND)  
+1x  Instrument Amp (Digi-Key# 505-AD620ANZ-ND)  
 2x  2P Screw Terminal (Digi-Key# 277-1273-ND)  
 1x  3P Screw Terminal (Digi-Key# 277-1274-ND)  
 
