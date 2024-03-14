@@ -10,7 +10,7 @@ The Gain trimmer will adjust the level of amplification. The range is not huge, 
 
 The thermistor gets connected to the 3-position screw terminal. "+5V" is going out from the board into the thermistor, while "In" is the input from the thermistor to the amp. The third position is connected to ground so you can connect cable shielding, which is techinally optional, but very highly recommended.
 
-![](Docs/Images/Amp.jpeg)
+![](Docs/Images/Amp.png)
 
 ## Building
 
