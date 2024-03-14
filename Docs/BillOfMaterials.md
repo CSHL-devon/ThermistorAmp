@@ -15,6 +15,7 @@
 1x  Instrument Amp (Digi-Key# 505-AD620ANZ-ND)  
 2x  2P Screw Terminal (Digi-Key# 277-1273-ND)  
 1x  3P Screw Terminal (Digi-Key# 277-1274-ND)  
+4x  M2x5mm Screws  
 
 1x  Thermistor (per animal) (Digi-Key# 223-1558-ND)
 - These have gotten very expensive. We're testing alternatives and will update this BoM if we find a suitable replacement
